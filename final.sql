@@ -66,7 +66,7 @@ CREATE TABLE fashionshow (
 CREATE TABLE designs (
     OutfitID VARCHAR(2),
     DesID VARCHAR(2),
-    DesignerCode VARCHAR(9),    
+    DesignerCode VARCHAR(9),
 	FOREIGN KEY (OutfitID) REFERENCES outfit(OutfitID),
     FOREIGN KEY (DesID, DesignerCode) REFERENCES designer(DesID, DesignerCode)
 );
